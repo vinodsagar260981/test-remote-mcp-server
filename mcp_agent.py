@@ -31,10 +31,15 @@ SERVERS = {
             "C:\\Users\\vinod\\OneDrive\\Desktop\\Coding\\AIWorld\\MCP_Tutorial\\sqlproject.py"
         ]
     },
-    "expenses":{
-        
+    "expense": {
+    "transport": "streamable_http",
+    "url": "https://reliable-brown-ostrich.fastmcp.app/mcp",
+    "headers": {
+        "Authorization": "Bearer fmcp_1Sl0EHMBZ_vsmTIUaamqJVg4aG1PtIoen7paEg30l_8"
     }
 }
+}
+
 
 
 async def run_agent(prompt: str):
