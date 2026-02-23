@@ -21,7 +21,7 @@ SERVERS = {
             "C:\\Users\\vinod\\OneDrive\\Desktop\\Coding\\AIWorld\\MCP_Tutorial\\math.py"
         ]
     },
-    "sqlAgent":{
+    "sqlAgent": {
         "transport": "stdio",
         "command": "C:\\Users\\vinod\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\uv.exe",
         "args": [
@@ -32,13 +32,14 @@ SERVERS = {
         ]
     },
     "expense": {
-    "transport": "streamable_http",
-    "url": "https://reliable-brown-ostrich.fastmcp.app/mcp",
-    "headers": {
-        "Authorization": "Bearer fmcp_1Sl0EHMBZ_vsmTIUaamqJVg4aG1PtIoen7paEg30l_8"
+        "transport": "streamable_http",
+        "url": "https://reliable-brown-ostrich.fastmcp.app/mcp",
+        "headers": {
+            "Authorization": f"Bearer {os.getenv('FASTMCP_API_KEY')}"
+        }
     }
 }
-}
+
 
 
 

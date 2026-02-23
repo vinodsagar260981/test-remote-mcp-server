@@ -1,4 +1,6 @@
 # app.py
+import nest_asyncio # type: ignore
+nest_asyncio.apply()
 
 import streamlit as st
 import asyncio
