@@ -35,11 +35,9 @@ SERVERS = {
         "transport": "streamable_http",
         "url": os.getenv("EXPENSE_SERVER_URL", "http://localhost:8000/mcp"),
         **({"headers": {"Authorization": f"Bearer {os.getenv('FASTMCP_API_KEY')}"}} 
-           if os.getenv("FASTMCP_API_KEY") else {})
+        if os.getenv("FASTMCP_API_KEY") else {})
     }
 }
-
-
 
 
 async def run_agent(prompt: str):
