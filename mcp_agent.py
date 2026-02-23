@@ -30,6 +30,9 @@ SERVERS = {
             "run",
             "C:\\Users\\vinod\\OneDrive\\Desktop\\Coding\\AIWorld\\MCP_Tutorial\\sqlproject.py"
         ]
+    },
+    "expenses":{
+        
     }
 }
 
