@@ -33,10 +33,9 @@ SERVERS = {
     },
     "expense": {
         "transport": "streamable_http",
-        "url": "https://reliable-brown-ostrich.fastmcp.app/mcp",
-        "headers": {
-            "Authorization": f"Bearer {os.getenv('FASTMCP_API_KEY')}"
-        }
+        "url": os.getenv("EXPENSE_SERVER_URL", "http://localhost:8000/mcp"),
+        **({"headers": {"Authorization": f"Bearer {os.getenv('FASTMCP_API_KEY')}"}} 
+           if os.getenv("FASTMCP_API_KEY") else {})
     }
 }
 
